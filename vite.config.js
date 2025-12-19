@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/hirundo-tech.github.io/", 
+  base: "/hirundo-tech/", 
   plugins: [react(), tailwindcss()],
 });
