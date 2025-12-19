@@ -14,11 +14,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Checkout the repo
+      # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Install Node.js
+      # Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -26,15 +26,15 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      # Build the React app into 'dist'
+      # Build the React app
       - name: Build React app
         run: npm run build
 
-      # Upload build artifact
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      # Upload the 'dist' folder as artifact for deployment
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
