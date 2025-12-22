@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section className="md:h-auto relative h-auto bg-[#DCECF0] w-full">
       <div className="flex justify-center items-center w-full xl:px-10">
-        <div className="lg:w-[80%] md:w-[85%] w-[90%] md:pt-5 pt-10 mx-auto flex lg:flex-row flex-col lg:gap-10  gap-5 justify-between items-center">
+        <div className="lg:w-[80%] md:w-[85%] w-[90%] md:pt-10 pt-10 mx-auto flex lg:flex-row flex-col lg:gap-10  gap-5 justify-between items-center">
           <motion.div
             className="text-[#1F1F1F] flex flex-col lg:gap-y-10  gap-y-3"
             initial={{ x: -100, opacity: 0 }}
@@ -55,13 +55,13 @@ const Hero = () => {
             <div className="flex md:justify-start justify-center items-center md:gap-x-5 gap-x-4">
               <button
                 onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-                className="bg-[#2F80C9] text-[#DCECF0] font-medium md:text-[15px] md:w-[175px] w-[150px] text-[13px] h-[42px] cursor-pointer rounded-4xl"
+                className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-45.75 w-39.5 text-[13px] h-10.5 cursor-pointer rounded-4xl"
               >
                 Book AI Assessment
               </button>
               <button
                 onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-                className="border-2 bg-[#DCECF0] border-[#2F80C9] text-[#2F80C9] font-semibold md:text-[15px] text-[13px] md:w-[143px] w-[130px] flex justify-center items-center h-[42px] cursor-pointer rounded-4xl"
+                className="border-2 bg-[#DCECF0] border-[#2F80C9] text-[#2F80C9] font-semibold md:text-[13px] text-[13px] md:w-35.75 w-32.5 flex justify-center items-center h-10.5 cursor-pointer rounded-4xl"
               >
                 Our Services
               </button>
@@ -73,7 +73,7 @@ const Hero = () => {
             alt="hero image"
             width={419}
             height={419}
-            className="bg-contain md:h-[419px] w-[270px] h-[270px] md:w-[419px] hover:scale-105 transition-all lg:mb-0 md:mb-3 mb-10"
+            className="bg-contain md:h-104.75 w-67.5 h-67.5 md:w-104.75 hover:scale-105 transition-all lg:mb-0 md:mb-3 mb-10"
             initial={isDesktop ? { x: 100, opacity: 0 } : { opacity: 1 }}
             whileInView={isDesktop ? { x: 0, opacity: 1 } : {}}
             viewport={{ once: false, amount: 0.5 }}
@@ -94,8 +94,8 @@ const Hero = () => {
         </div>
       </div>
       <div
-        onClick={handleScrollDown}
-        className="bg-[#D0DFE2] lg:block hidden rounded-full p-4  mx-auto w-[42px] mb-[70px] mt-[75px] h-[42px] cursor-pointer"
+        // onClick={handleScrollDown}
+        className="bg-[#D0DFE2] lg:block hidden rounded-full p-4  mx-auto w-10.5 mb-17.5 mt-21.75 h-10.5 cursor-pointer"
       >
         <img src={IMAGES.down} alt="arrow-down" width={10} height={10} />
       </div>

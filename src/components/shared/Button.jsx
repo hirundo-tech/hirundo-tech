@@ -9,7 +9,7 @@ const variants = {
   outlined:
     "md:min-w-[140px] bg-transparent cursor-pointer disabled:cursor-not-allowed md:px-5 px-3 md:py-3 py-2 text-[13px] border border-[#2F80C9] rounded-[32px] outline-none text-[#2F80C9] font-semibold transition-colors",
   contained:
-    "md:min-w-[140px] cursor-pointer disabled:cursor-not-allowed bg-[#2F80C9] md:px-5 px-3 md:py-3 py-2 text-[13px] border border-[#2F80C9] outline-none rounded-[32px] font-medium text-[#DCECF0] transition-colors",
+    "md:min-w-[140px] cursor-pointer disabled:cursor-not-allowed bg-[#2F80C9] md:px-5 px-3 md:py-3 py-2 text-[13px] border border-[#2F80C9] outline-none rounded-[32px] font-semibold text-[#DCECF0] transition-colors",
 };
 
 const Button = ({

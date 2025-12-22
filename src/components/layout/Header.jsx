@@ -26,12 +26,16 @@ export default function Header({ visible }) {
       position="sticky"
       elevation={0}
       sx={{
-        top: { lg: 16, md: 12, xs: 2 },
+        top: { lg: 0, md: 8, xs: 2 },
         mx: "auto",
         width: { md: "95%", xs: "90%" },
         borderRadius: 10,
         backgroundColor: { md: "transparent", xs: "#D0DFE2" },
         mt: { md: 0, xs: 2 },
+        minHeight: {
+          lg: 177.55,
+          xs: "auto",
+        },
       }}
     >
       <Toolbar
@@ -60,6 +64,7 @@ export default function Header({ visible }) {
             gap: 0,
             cursor: "pointer",
           }}
+          className="lg:h-[177.55px] h-auto lg:w-[250px] w-auto"
           onClick={() => navigate("/")}
         >
           {visible && (
@@ -94,7 +99,7 @@ export default function Header({ visible }) {
             borderRadius: 8,
             boxShadow: "0px 2px 3px 0px rgba(0, 0, 0, 0.15)",
           }}
-          className="lg:flex hidden justify-between items-center"
+          className="lg:flex hidden  justify-between items-center"
         >
           {items.map((link, index) => (
             <NavLink key={index} link={link} />
