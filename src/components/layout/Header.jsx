@@ -36,10 +36,10 @@ export default function Header() {
         sx={{
           position: "relative",
           display: "flex",
-          justifyContent: { lg: "space-between", xs: "center" },
+          justifyContent: { md: "space-between", xs: "center" },
         }}
       >
-        <div className="lg:hidden absolute top-5 bg-[#2F80C9] rounded-full p-2 right-2">
+        <div className="lg:hidden absolute top-7.5 bg-[#2F80C9] rounded-full p-2 right-2">
           <img
             src={IMAGES.menu} // replace with your logo path
             alt="HIRUNDO Logo"
@@ -92,7 +92,7 @@ export default function Header() {
         </Box>
 
         <Button
-          className="lg:block hidden font-semibold!"
+          className="lg:block hidden !w-[142px]"
           onClick={() => navigate("/contact-us")}
         >
           Contact Us

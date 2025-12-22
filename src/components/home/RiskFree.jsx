@@ -29,7 +29,7 @@ const RiskFree = () => {
   return (
     <section className="h-auto lg:py-40 py-10 bg-[#DCECF0] flex md:flex-row flex-col justify-center items-center w-full">
       <div className="lg:w-[80%] md:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col gap-10 justify-between items-start">
-        <div className="text-[#1F1F1F] flex flex-col gap-y-5">
+        <div className="text-[#1F1F1F] flex flex-col gap-y-5 w-full">
           <h1 className="font-medium lg:text-[28px] text-[22px] lg:block hidden">
             We are not just developers.
           </h1>
@@ -41,8 +41,13 @@ const RiskFree = () => {
             ownership of planning, coordination and delivery, ensuring clear
             milestones, alignment with business goals and predictable outcomes.
           </p>
-          <div className="flex justify-start items-center gap-x-7">
-            <Button>Book AI Assessment</Button>
+          <div className="flex justify-start items-center gap-x-7 w-full">
+            <button
+              onClick={() => handleClick("https://calendly.com/hirundo-tech")}
+              className="bg-[#2F80C9] text-[#DCECF0] font-medium md:text-[15px] md:w-[175px] w-[150px] text-[13px] h-[42px] cursor-pointer rounded-4xl"
+            >
+              Book AI Assessment
+            </button>
           </div>
         </div>
         <div className="md:pl-3">
