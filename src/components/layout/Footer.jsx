@@ -43,25 +43,18 @@ const Footer = () => {
       <div className="w-full bg-[#D0DFE2] text-[#1F1F1F] rounded-4xl py-3">
         <div className="lg:px-20 lg:pt-10 pt-5 md:px-0 px-10 w-full flex md:flex-row flex-col lg:gap-0 gap-10  justify-between lg:items-center items-start">
           <div className="md:px-20 px-0 lg:pl-0">
-            <div style={{ display: "flex", alignItems: "center", gap: 0 }}>
-              <p
-                className="text-center text-[#1F1F1F] leading-4 text-[26px]"
-                style={{
-                  fontWeight: 800,
-                  leadingTrim: "none",
-                  letterSpacing: "30%",
-                }}
-              >
-                HIRUNDO
-              </p>
+            <div
+              className="-ml-2"
+              style={{ display: "flex", alignItems: "center", gap: 0 }}
+            >
               <img
-                src={IMAGES.logo} // replace with your logo path
+                src={IMAGES.logotype} // replace with your logo path
                 alt="HIRUNDO Logo"
-                width={95}
+                width={175}
                 height={95}
               />
             </div>
-            <div className="max-w-md text-[15px] leading-5 mb-5">
+            <div className="max-w-md text-[15px] leading-5 -mt-3 mb-5">
               AI systems. Custom or outsourced. <br />
               From design to deployment, we combine engineering execution with
               structured project management.
