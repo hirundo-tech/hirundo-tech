@@ -53,7 +53,7 @@ const Services = () => {
             <div className="flex lg:justify-start justify-center items-center">
               <button
                 onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-                className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-43.75 w-39.5  text-[13px] h-[42px] cursor-pointer rounded-4xl"
+                className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-43.75 w-39.5  text-[13px] h-10.5 cursor-pointer rounded-4xl"
               >
                 Book AI Assessment
               </button>
@@ -121,7 +121,7 @@ const ServiceCard = ({ item }) => {
         className="mx-auto mb-2"
       />
       <div className="text-lg mb-3 font-semibold">{item.title}</div>
-      <div className="text-[15px] xl:min-h-[180px]  lg:min-h-[230px] md:min-h-[110px]  text-center leading-6 px-6">
+      <div className="text-[15px] xl:min-h-45  lg:min-h-47.5 md:min-h-27.5  text-center leading-6 px-6">
         {item.description}
       </div>
     </div>

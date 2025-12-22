@@ -64,7 +64,7 @@ export default function Header({ visible }) {
             gap: 0,
             cursor: "pointer",
           }}
-          className="lg:h-[177.55px] h-auto lg:w-[250px] w-auto"
+          className="lg:h-[177.55px] h-auto lg:w-62.5 w-auto"
           onClick={() => navigate("/")}
         >
           {visible && (
@@ -107,7 +107,7 @@ export default function Header({ visible }) {
         </Box>
 
         <Button
-          className="lg:block hidden !w-[142px]"
+          className="lg:block hidden w-35.5!"
           onClick={() => navigate("/contact-us")}
         >
           Contact Us

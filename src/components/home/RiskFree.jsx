@@ -44,7 +44,7 @@ const RiskFree = () => {
           <div className="flex justify-start items-center gap-x-7 w-full">
             <button
               onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-              className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-43.75 w-39.5  text-[13px] h-[42px] cursor-pointer rounded-4xl"
+              className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-43.75 w-39.5  text-[13px] h-10.5 cursor-pointer rounded-4xl"
             >
               Book AI Assessment
             </button>
