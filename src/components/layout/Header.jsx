@@ -18,8 +18,9 @@ const items = [
   { label: "About", path: "/about" },
 ];
 
-export default function Header() {
+export default function Header({ visible }) {
   const navigate = useNavigate();
+
   return (
     <AppBar
       position="sticky"
@@ -27,9 +28,10 @@ export default function Header() {
       sx={{
         top: { lg: 16, md: 12, xs: 2 },
         mx: "auto",
-        width: "95%",
-        borderRadius: 3,
-        backgroundColor: "transparent",
+        width: { md: "95%", xs: "90%" },
+        borderRadius: 10,
+        backgroundColor: { md: "transparent", xs: "#D0DFE2" },
+        mt: { md: 0, xs: 2 },
       }}
     >
       <Toolbar
@@ -39,12 +41,14 @@ export default function Header() {
           justifyContent: { md: "space-between", xs: "center" },
         }}
       >
-        <div className="lg:hidden absolute top-7.5 bg-[#2F80C9] rounded-full p-2 right-2">
+        <div className="lg:hidden absolute top-3.5 bg-[#2F80C9] rounded-full p-2 right-4">
           <img
             src={IMAGES.menu} // replace with your logo path
             alt="HIRUNDO Logo"
             width={17}
             height={17}
+            fetchpriority="high"
+            loading="lazy"
             className="lg:hidden block"
           />
         </div>
@@ -58,18 +62,24 @@ export default function Header() {
           }}
           onClick={() => navigate("/")}
         >
+          {visible && (
+            <img
+              src={IMAGES.logotype}
+              alt="HIRUNDO Logo"
+              width={250}
+              height={95}
+              fetchpriority="high"
+              loading="lazy"
+              className="lg:block hidden"
+            />
+          )}
           <img
-            src={IMAGES.logotype} // replace with your logo path
+            src={IMAGES.logotype}
             alt="HIRUNDO Logo"
-            width={250}
-            height={95}
-            className="lg:block hidden"
-          />
-          <img
-            src={IMAGES.logotype} // replace with your logo path
-            alt="HIRUNDO Logo"
-            width={135}
-            height={75}
+            width={85}
+            height={30}
+            fetchpriority="high"
+            loading="lazy"
             className="lg:hidden block"
           />
         </Box>

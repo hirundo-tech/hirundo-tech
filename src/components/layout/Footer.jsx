@@ -52,6 +52,8 @@ const Footer = () => {
                 alt="HIRUNDO Logo"
                 width={175}
                 height={95}
+                fetchpriority="high"
+                loading="lazy"
               />
             </div>
             <div className="max-w-md text-[15px] leading-5 -mt-3 mb-5">
@@ -75,8 +77,9 @@ const Footer = () => {
             <div>
               <div className="text-lg font-semibold mb-4">Sitemap</div>
               <div className="flex justify-start items-start flex-col gap-y-2">
-                {sitemap.map((item) => (
+                {sitemap.map((item, index) => (
                   <Link
+                    key={index}
                     to={item.path}
                     className={`text-[15px] transition-all duration-300 text-[#1F1F1F] hover:text-[#2f80c9]`}
                   >
@@ -88,8 +91,9 @@ const Footer = () => {
             <div>
               <div className="text-lg font-semibold mb-4">Contact Us</div>
               <div className="flex justify-start items-start flex-col gap-y-2">
-                {contacts.map((item) => (
+                {contacts.map((item, index) => (
                   <div
+                    key={index}
                     onClick={() => handleClick(item.path, item?.isNew)}
                     className={`text-[15px] cursor-pointer transition-all duration-300 text-[#1F1F1F] hover:text-[#2f80c9]`}
                   >
