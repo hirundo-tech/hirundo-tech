@@ -37,7 +37,7 @@ const Services = () => {
   };
 
   return (
-    <section className="h-auto pb-10 bg-[#DCECF0] flex lg:flex-row flex-col justify-center items-center w-full">
+    <section className="h-auto lg:pb-10 pb-20 bg-[#DCECF0] flex lg:flex-row flex-col justify-center items-center w-full">
       <div>
         <div className="text-[#1F1F1F] md:p-10 p-5 rounded-4xl lg:w-[80%] md:w-[85%] w-[90%] bg-[#D0DFE2] mx-auto flex md:flex-row flex-col gap-10 justify-between items-start">
           <div className="md:w-[42%] w-full md:text-[28px] leading-10 md:font-medium font-bold text-[22px] md:text-left text-center">

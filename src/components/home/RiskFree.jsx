@@ -27,7 +27,7 @@ const data = [
 
 const RiskFree = () => {
   return (
-    <section className="h-auto lg:py-40 py-10 bg-[#DCECF0] flex md:flex-row flex-col justify-center items-center w-full">
+    <section className="h-auto lg:py-40 py-20 bg-[#DCECF0] flex md:flex-row flex-col justify-center items-center w-full">
       <div className="lg:w-[80%] md:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col gap-10 justify-between items-start">
         <div className="text-[#1F1F1F] flex flex-col gap-y-5 w-full">
           <h1 className="md:font-mredium font-bold lg:text-[28px] text-[22px] lg:block hidden">
@@ -36,7 +36,7 @@ const RiskFree = () => {
           <h1 className="md:font-mredium font-bold fill-sky-100t-medium lg:text-[28px] text-[22px] lg:hidden block">
             Not just developers
           </h1>
-          <p className="mt-0 lg:text-lg text-xs my-1">
+          <p className="mt-0 lg:text-lg text-[15px] lg:leading-7 leading-5 my-1">
             Building AI systems requires more than writing code. <br /> We take
             ownership of planning, coordination and delivery, ensuring clear
             milestones, alignment with business goals and predictable outcomes.

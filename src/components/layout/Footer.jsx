@@ -39,7 +39,7 @@ const Footer = () => {
     }
   };
   return (
-    <section className="bg-[#DCECF0] lg:px-5 px-3 py-10 flex justify-center items-center w-full">
+    <section className="bg-[#DCECF0] lg:px-5 px-3 py-10 lg:mt-0 mt-4 flex justify-center items-center w-full">
       <div className="w-full bg-[#D0DFE2] text-[#1F1F1F] rounded-4xl py-3">
         <div className="lg:px-20 lg:pt-10 pt-5 md:px-0 px-10 w-full flex md:flex-row flex-col lg:gap-0 gap-10  justify-between lg:items-center items-start">
           <div className="md:px-20 px-0 lg:pl-0">
@@ -62,7 +62,7 @@ const Footer = () => {
               structured project management.
             </div>
             <Button
-              className="!w-[141px]"
+              className="w-35.25!"
               onClick={() =>
                 window.scrollTo({
                   top: 0,
@@ -108,7 +108,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-xs lg:px-10 px-5 mt-10 mb-1">
+        <div className="text-xs lg:px-10 leading-5 px-5 mt-10 mb-1">
           Hirundo Technologies s.r.l.s., Massafra (TA), Italy, VAT: 03375820739.
           All rights are reserved.
         </div>

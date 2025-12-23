@@ -112,7 +112,7 @@ const TeamCard = ({ member }) => {
       <div className="text-lg mb-4 md:font-semibold font-bold">
         {member.role}
       </div>
-      <div className="lg:text-[15px] text-xs text-center mb-4 leading-6 lg:px-6 px-0">
+      <div className="text-[15px] text-center mb-4 leading-6 lg:px-6 px-0">
         {member.description}
       </div>
       <div className="flex justify-center items-center gap-x-5">

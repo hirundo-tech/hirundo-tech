@@ -47,12 +47,12 @@ const Hero = () => {
             <div className="md:font-semibold font-bold lg:-mb-2 xl:text-[44px] lg:text-[36px] md:text-[30px] text-[22px] md:text-left text-center">
               Custom and outsourced.
             </div>
-            <p className="mt-0 lg:text-lg text-xs md:text-left text-center">
+            <p className="mt-0 lg:text-lg text-[15px] lg:leading-7 leading-6 md:text-left text-center">
               From design to deployment, we operate as an external AI unit or
               build custom systems around your business processes, combining
               strong engineering with structured project management skills.
             </p>
-            <div className="flex md:justify-start justify-center items-center md:gap-x-5 gap-x-4">
+            <div className="flex md:justify-start justify-center lg:mt-0 mt-3 items-center md:gap-x-5 gap-x-4">
               <button
                 onClick={() => handleClick("https://calendly.com/hirundo-tech")}
                 className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-43.75 w-39.5 text-[13px] h-10.5 cursor-pointer rounded-4xl"
@@ -73,7 +73,7 @@ const Hero = () => {
             alt="hero image"
             width={419}
             height={419}
-            className="bg-contain md:h-104.75 w-67.5 h-67.5 md:w-104.75 hover:scale-105 transition-all lg:mb-0 md:mb-3 mb-10"
+            className="bg-contain md:h-104.75 w-67.5 h-67.5 md:w-104.75 hover:scale-105 transition-all lg:mb-0 md:mb-3 mb-20"
             initial={isDesktop ? { x: 100, opacity: 0 } : { opacity: 1 }}
             whileInView={isDesktop ? { x: 0, opacity: 1 } : {}}
             viewport={{ once: false, amount: 0.5 }}

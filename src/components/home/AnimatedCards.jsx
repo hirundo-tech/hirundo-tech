@@ -17,7 +17,9 @@ const AnimatedCards = ({ projects }) => {
               <div className="font-semibold text-4xl">{i + 1}</div>
               <div className="flex flex-col justify-center items-start gap-y-2">
                 <div className="font-semibold text-lg">{project.title}</div>
-                <div className="text-[15px]">{project.description}</div>
+                <div className="text-[15px] leading-5">
+                  {project.description}
+                </div>
               </div>
             </div>
           </div>
