@@ -5,6 +5,7 @@ import { IMAGES } from "../../assets";
 import Button from "../shared/Button";
 import NavLink from "./NavLink";
 import { useNavigate } from "react-router-dom";
+import Fade from "@mui/material/Fade";
 
 const items = [
   {
@@ -26,12 +27,13 @@ export default function Header({ visible }) {
       position="sticky"
       elevation={0}
       sx={{
-        top: { lg: 0, md: 8, xs: 2 },
+        top: { lg: 0, md: 8, xs: 0 },
         mx: "auto",
         width: { md: "95%", xs: "90%" },
         borderRadius: 10,
-        backgroundColor: { md: "transparent", xs: "#D0DFE2" },
-        mt: { md: 0, xs: 2 },
+        // backgroundColor: { md: "transparent", xs: "#D0DFE2" },
+        backgroundColor: "transparent",
+        mt: { md: 0, xs: 0 },
         minHeight: {
           lg: 177.55,
           xs: "auto",
@@ -45,12 +47,12 @@ export default function Header({ visible }) {
           justifyContent: { md: "space-between", xs: "center" },
         }}
       >
-        <div className="lg:hidden absolute top-3.5 bg-[#2F80C9] rounded-full p-2 right-4">
+        <div className="lg:hidden absolute top-9.5 bg-[#2F80C9] rounded-full p-1 right-4">
           <img
             src={IMAGES.menu} // replace with your logo path
             alt="HIRUNDO Logo"
-            width={17}
-            height={17}
+            width={20}
+            height={20}
             fetchpriority="high"
             loading="lazy"
             className="lg:hidden block"
@@ -67,7 +69,7 @@ export default function Header({ visible }) {
           className="lg:h-[177.55px] h-auto lg:w-62.5 w-auto"
           onClick={() => navigate("/")}
         >
-          {visible && (
+          <Fade in={visible} timeout={500}>
             <img
               src={IMAGES.logotype}
               alt="HIRUNDO Logo"
@@ -77,12 +79,12 @@ export default function Header({ visible }) {
               loading="lazy"
               className="lg:block hidden"
             />
-          )}
+          </Fade>
           <img
             src={IMAGES.logotype}
             alt="HIRUNDO Logo"
-            width={85}
-            height={30}
+            width={145}
+            height={40}
             fetchpriority="high"
             loading="lazy"
             className="lg:hidden block"

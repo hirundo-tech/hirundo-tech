@@ -40,11 +40,11 @@ const Services = () => {
     <section className="h-auto pb-10 bg-[#DCECF0] flex lg:flex-row flex-col justify-center items-center w-full">
       <div>
         <div className="text-[#1F1F1F] md:p-10 p-5 rounded-4xl lg:w-[80%] md:w-[85%] w-[90%] bg-[#D0DFE2] mx-auto flex md:flex-row flex-col gap-10 justify-between items-start">
-          <div className="md:w-[42%] w-full md:text-[28px] leading-10 font-medium text-[22px] md:text-left text-center">
+          <div className="md:w-[42%] w-full md:text-[28px] leading-10 md:font-medium font-bold text-[22px] md:text-left text-center">
             If you want to integrate AI, you need a Team.
           </div>
           <div className="md:w-[45%] w-full">
-            <div className="md:text-[15px] text-xs mb-6 leading-6 md:text-left text-center">
+            <div className="text-[15px] mb-6 leading-6 md:text-left text-center">
               To generate real impact, AI systems must be designed around your
               actual needs, developed with solid engineering, and maintained
               reliably over time. Only then can you reduce costs, increase
@@ -120,7 +120,9 @@ const ServiceCard = ({ item }) => {
         alt={item.title}
         className="mx-auto mb-2"
       />
-      <div className="text-lg mb-3 font-semibold">{item.title}</div>
+      <div className="text-lg mb-3 md:font-semibold  font-bold">
+        {item.title}
+      </div>
       <div className="text-[15px] xl:min-h-45  lg:min-h-47.5 md:min-h-27.5  text-center leading-6 px-6">
         {item.description}
       </div>

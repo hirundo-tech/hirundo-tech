@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section className="md:h-auto relative h-auto bg-[#DCECF0] w-full">
       <div className="flex justify-center items-center w-full xl:px-10">
-        <div className="lg:w-[80%] md:w-[85%] w-[90%] md:pt-10 pt-10 mx-auto flex lg:flex-row flex-col lg:gap-10  gap-5 justify-between items-center">
+        <div className="lg:w-[80%] md:w-[85%] w-[90%] md:pt-10 pt-16 mx-auto flex lg:flex-row flex-col lg:gap-10  gap-5 justify-between items-center">
           <motion.div
             className="text-[#1F1F1F] flex flex-col lg:gap-y-10  gap-y-3"
             initial={{ x: -100, opacity: 0 }}
