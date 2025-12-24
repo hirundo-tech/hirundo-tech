@@ -48,16 +48,16 @@ const Team = () => {
         <div className="text-[28px] md:font-medium font-bold">
           Meet Our Team.
         </div>
-        <div className="text-[15px] leading-5 mt-8 lg:max-w-[87%] max-w-full">
+        <div className="text-[15px] leading-7 mt-8 lg:max-w-[87%] max-w-full">
           We are a deliberately small, highly specialized team with a strong
           academic background and hands-on experience in complex, real-world
           projects. Check our Github and Linked In History.
         </div>
-        <div className="text-[15px] font-semibold leading-5 my-4 max-w-[87%]">
+        <div className="text-[15px] font-semibold leading-7 my-4 max-w-[87%]">
           We believe in small, highly-specialized and focused teams that are
           able to manage complex and high-impact workflows.
         </div>
-        <div className="text-[15px] leading-5 max-w-[87%]">
+        <div className="text-[15px] leading-7 max-w-[87%]">
           Supported by a trusted network of domain specialists, we scale
           solutions beyond pure development.
         </div>
@@ -112,7 +112,7 @@ const TeamCard = ({ member }) => {
       <div className="text-lg mb-4 md:font-semibold font-bold">
         {member.role}
       </div>
-      <div className="text-[15px] text-center mb-4 leading-6 lg:px-6 px-0">
+      <div className="text-[15px] text-center mb-4 leading-7 lg:px-6 px-0">
         {member.description}
       </div>
       <div className="flex justify-center items-center gap-x-5">

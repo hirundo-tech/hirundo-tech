@@ -108,7 +108,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-xs lg:px-10 leading-5 px-5 mt-10 mb-1">
+        <div className="text-xs lg:px-10 leading-6 px-5 mt-10 mb-1">
           Hirundo Technologies s.r.l.s., Massafra (TA), Italy, VAT: 03375820739.
           All rights are reserved.
         </div>

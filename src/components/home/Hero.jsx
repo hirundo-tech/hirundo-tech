@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section className="md:h-auto relative h-auto bg-[#DCECF0] w-full">
       <div className="flex justify-center items-center w-full xl:px-10">
-        <div className="lg:w-[80%] md:w-[85%] w-[90%] md:pt-10 pt-16 mx-auto flex lg:flex-row flex-col lg:gap-10  gap-5 justify-between items-center">
+        <div className="lg:w-[80%] md:w-[85%] w-[95%] md:pt-10 pt-16 mx-auto flex lg:flex-row flex-col lg:gap-10  gap-5 justify-between items-center">
           <motion.div
             className="text-[#1F1F1F] flex flex-col lg:gap-y-10  gap-y-3"
             initial={{ x: -100, opacity: 0 }}
@@ -41,27 +41,27 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 1 }}
           >
-            <div className="lg:-mb-5.5 md:font-semibold font-bold xl:text-[44px] lg:text-[36px] md:text-[30px] text-[22px] md:text-left text-center">
+            <div className="lg:-mb-5.5 md:font-semibold font-bold xl:text-[44px] lg:text-[36px] md:text-[30px] text-[28px] md:text-left text-center">
               We build AI Systems.
             </div>
-            <div className="md:font-semibold font-bold lg:-mb-2 xl:text-[44px] lg:text-[36px] md:text-[30px] text-[22px] md:text-left text-center">
+            <div className="md:font-semibold font-bold lg:-mb-2 xl:text-[44px] lg:text-[36px] md:text-[30px] text-[28px] md:text-left text-center">
               Custom and outsourced.
             </div>
-            <p className="mt-0 lg:text-lg text-[15px] lg:leading-7 leading-6 md:text-left text-center">
+            <p className="mt-0 lg:text-lg text-[15px] lg:leading-7 leading-7 md:text-left text-center">
               From design to deployment, we operate as an external AI unit or
               build custom systems around your business processes, combining
               strong engineering with structured project management skills.
             </p>
-            <div className="flex md:justify-start justify-center lg:mt-0 mt-3 items-center md:gap-x-5 gap-x-4">
+            <div className="flex md:justify-start flex-wrap justify-center lg:mt-0 mt-3 items-center md:gap-x-5 gap-x-2">
               <button
                 onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-                className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-43.75 w-39.5 text-[13px] h-10.5 cursor-pointer rounded-4xl"
+                className="bg-[#2F80C9] text-[#DCECF0] font-semibold px-2.5 text-[15px] h-10.5 cursor-pointer rounded-4xl"
               >
                 Book AI Assessment
               </button>
               <button
                 onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-                className="border-2 bg-[#DCECF0] border-[#2F80C9] text-[#2F80C9] font-semibold md:text-[13px] text-[13px] md:w-35.75 w-32.5 flex justify-center items-center h-10.5 cursor-pointer rounded-4xl"
+                className="border-2 bg-[#DCECF0] border-[#2F80C9] text-[#2F80C9] font-semibold text-[15px] px-2.5 flex justify-center items-center h-10.5 cursor-pointer rounded-4xl"
               >
                 Our Services
               </button>

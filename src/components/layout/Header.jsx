@@ -29,7 +29,7 @@ export default function Header({ visible }) {
       sx={{
         top: { lg: 0, md: 8, xs: 0 },
         mx: "auto",
-        width: { md: "95%", xs: "90%" },
+        width: { md: "95%", xs: "98%" },
         borderRadius: 10,
         // backgroundColor: { md: "transparent", xs: "#D0DFE2" },
         backgroundColor: "transparent",
@@ -44,15 +44,15 @@ export default function Header({ visible }) {
         sx={{
           position: "relative",
           display: "flex",
-          justifyContent: { md: "space-between", xs: "center" },
+          justifyContent: "space-between",
         }}
       >
-        <div className="lg:hidden absolute top-9.5 bg-[#2F80C9] rounded-full p-1 right-4">
+        <div className="lg:hidden absolute top-13 bg-[#2F80C9] rounded-full p-1 w-8.5 h-8.5 right-4">
           <img
             src={IMAGES.menu} // replace with your logo path
             alt="HIRUNDO Logo"
-            width={20}
-            height={20}
+            width={30}
+            height={30}
             fetchpriority="high"
             loading="lazy"
             className="lg:hidden block"
@@ -69,7 +69,7 @@ export default function Header({ visible }) {
           className="lg:h-[177.55px] h-auto lg:w-62.5 w-auto"
           onClick={() => navigate("/")}
         >
-          <Fade in={visible} timeout={500}>
+          <Fade in={visible} timeout={700}>
             <img
               src={IMAGES.logotype}
               alt="HIRUNDO Logo"
@@ -83,8 +83,8 @@ export default function Header({ visible }) {
           <img
             src={IMAGES.logotype}
             alt="HIRUNDO Logo"
-            width={145}
-            height={40}
+            width={200}
+            height={50}
             fetchpriority="high"
             loading="lazy"
             className="lg:hidden block"

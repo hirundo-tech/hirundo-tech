@@ -36,7 +36,7 @@ const RiskFree = () => {
           <h1 className="md:font-mredium font-bold fill-sky-100t-medium lg:text-[28px] text-[22px] lg:hidden block">
             Not just developers
           </h1>
-          <p className="mt-0 lg:text-lg text-[15px] lg:leading-7 leading-5 my-1">
+          <p className="mt-0 lg:text-lg text-[15px] leading-7 my-1">
             Building AI systems requires more than writing code. <br /> We take
             ownership of planning, coordination and delivery, ensuring clear
             milestones, alignment with business goals and predictable outcomes.
@@ -44,7 +44,7 @@ const RiskFree = () => {
           <div className="flex justify-start items-center gap-x-7 w-full">
             <button
               onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-              className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-43.75 w-39.5  text-[13px] h-10.5 cursor-pointer rounded-4xl"
+              className="bg-[#2F80C9] text-[#DCECF0] font-semibold text-[15px] px-3 h-10.5 cursor-pointer rounded-4xl"
             >
               Book AI Assessment
             </button>

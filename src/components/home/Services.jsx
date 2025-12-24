@@ -44,7 +44,7 @@ const Services = () => {
             If you want to integrate AI, you need a Team.
           </div>
           <div className="md:w-[45%] w-full">
-            <div className="text-[15px] mb-6 leading-6 md:text-left text-center">
+            <div className="text-[15px] mb-6 leading-7 md:text-left text-center">
               To generate real impact, AI systems must be designed around your
               actual needs, developed with solid engineering, and maintained
               reliably over time. Only then can you reduce costs, increase
@@ -53,7 +53,7 @@ const Services = () => {
             <div className="flex lg:justify-start justify-center items-center">
               <button
                 onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-                className="bg-[#2F80C9] text-[#DCECF0] font-semibold md:text-[13px] md:w-43.75 w-39.5  text-[13px] h-10.5 cursor-pointer rounded-4xl"
+                className="bg-[#2F80C9] text-[#DCECF0] font-semibold px-3  text-[15px] h-10.5 cursor-pointer rounded-4xl"
               >
                 Book AI Assessment
               </button>
@@ -123,7 +123,7 @@ const ServiceCard = ({ item }) => {
       <div className="text-lg mb-3 md:font-semibold  font-bold">
         {item.title}
       </div>
-      <div className="text-[15px] xl:min-h-45  lg:min-h-47.5 md:min-h-27.5  text-center leading-6 px-6">
+      <div className="text-[15px] xl:min-h-45  lg:min-h-47.5 md:min-h-27.5  text-center leading-7 px-6">
         {item.description}
       </div>
     </div>
