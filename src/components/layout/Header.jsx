@@ -33,10 +33,10 @@ export default function Header({ visible }) {
         borderRadius: 10,
         // backgroundColor: { md: "transparent", xs: "#D0DFE2" },
         backgroundColor: "transparent",
-        mt: { md: 0, xs: 0 },
+        mt: 0,
         minHeight: {
           lg: 177.55,
-          xs: "auto",
+          xs: 142.03,
         },
       }}
     >
@@ -66,10 +66,10 @@ export default function Header({ visible }) {
             gap: 0,
             cursor: "pointer",
           }}
-          className="lg:h-[177.55px] h-auto lg:w-62.5 w-auto"
+          className="lg:h-[177.55px] h-[142.03px] lg:w-62.5 w-auto"
           onClick={() => navigate("/")}
         >
-          <Fade in={visible} timeout={700}>
+          <Fade in={visible} timeout={300}>
             <img
               src={IMAGES.logotype}
               alt="HIRUNDO Logo"
@@ -80,15 +80,17 @@ export default function Header({ visible }) {
               className="lg:block hidden"
             />
           </Fade>
-          <img
-            src={IMAGES.logotype}
-            alt="HIRUNDO Logo"
-            width={200}
-            height={50}
-            fetchpriority="high"
-            loading="lazy"
-            className="lg:hidden block"
-          />
+          <Fade in={visible} timeout={700}>
+            <img
+              src={IMAGES.logotype}
+              alt="HIRUNDO Logo"
+              width={200}
+              height={50}
+              fetchpriority="high"
+              loading="lazy"
+              className="lg:hidden block"
+            />
+          </Fade>
         </Box>
 
         {/* Center: Navigation Links */}

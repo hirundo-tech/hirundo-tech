@@ -30,10 +30,10 @@ const RiskFree = () => {
     <section className="h-auto lg:py-40 py-20 bg-[#DCECF0] flex md:flex-row flex-col justify-center items-center w-full">
       <div className="lg:w-[80%] md:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col gap-10 justify-between items-start">
         <div className="text-[#1F1F1F] flex flex-col gap-y-5 w-full">
-          <h1 className="md:font-mredium font-bold lg:text-[28px] text-[22px] lg:block hidden">
+          <h1 className="md:font-semibold font-semibold lg:text-[28px] text-[22px] lg:block hidden">
             We are not just developers.
           </h1>
-          <h1 className="md:font-mredium font-bold fill-sky-100t-medium lg:text-[28px] text-[22px] lg:hidden block">
+          <h1 className="md:font-medium font-semibold fill-sky-100t-medium lg:text-[28px] text-[22px] lg:hidden block">
             Not just developers
           </h1>
           <p className="mt-0 lg:text-lg text-[15px] leading-7 my-1">
@@ -51,7 +51,7 @@ const RiskFree = () => {
           </div>
         </div>
         <div className="md:pl-3">
-          <h1 className="text-[#1F1F1F] mb-10 md:font-mredium font-bold lg:text-[28px] text-[22px]">
+          <h1 className="text-[#1F1F1F] mb-10 md:font-semibold font-semibold lg:text-[28px] text-[22px]">
             Risk-free workflow.
           </h1>
           <div className="flex flex-col gap-y-5">

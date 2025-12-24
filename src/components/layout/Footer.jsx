@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="md:px-20 pl-0 flex lg:flex-row flex-col justify-start items-start lg:gap-20 gap-10 md:w-[45%] w-full">
             <div>
-              <div className="text-lg md:font-semibold font-bold mb-4">
+              <div className="text-lg md:font-semibold font-semibold mb-4">
                 Sitemap
               </div>
               <div className="flex justify-start items-start flex-col gap-y-2">
@@ -91,7 +91,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="text-lg md:font-semibold font-bold mb-4">
+              <div className="text-lg md:font-semibold font-semibold mb-4">
                 Contact Us
               </div>
               <div className="flex justify-start items-start flex-col gap-y-2">

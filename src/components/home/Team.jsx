@@ -45,7 +45,7 @@ const Team = () => {
   return (
     <section className="h-auto md:mt-20 mt-20 lg:mt-0 pb-10 bg-[#DCECF0] flex justify-center items-center w-full">
       <div className="text-[#1F1F1F] lg:p-10 p-4 rounded-4xl xl:w-[58%] lg:w-[75%] md:w-[95%] w-[95%] mx-auto">
-        <div className="text-[28px] md:font-medium font-bold">
+        <div className="text-[28px] md:font-semibold font-semibold">
           Meet Our Team.
         </div>
         <div className="text-[15px] leading-7 mt-8 lg:max-w-[87%] max-w-full">
@@ -106,10 +106,10 @@ const TeamCard = ({ member }) => {
         alt={member.name}
         className="mx-auto"
       />
-      <div className="text-lg mt-6 md:font-semibold font-bold">
+      <div className="text-lg mt-6 md:font-semibold font-semibold">
         {member.name}
       </div>
-      <div className="text-lg mb-4 md:font-semibold font-bold">
+      <div className="text-lg mb-4 md:font-semibold font-semibold">
         {member.role}
       </div>
       <div className="text-[15px] text-center mb-4 leading-7 lg:px-6 px-0">

@@ -7,27 +7,6 @@ const Hero = () => {
     window.open(link, "_blank", "noopener,noreferrer");
   };
 
-  const smoothScrollBy = (distance, duration = 700) => {
-    const start = window.scrollY;
-    let startTime = null;
-
-    const animate = (currentTime) => {
-      if (!startTime) startTime = currentTime;
-      const timeElapsed = currentTime - startTime;
-      const progress = Math.min(timeElapsed / duration, 1);
-      // easeInOutCos function for smooth acceleration/deceleration
-      const ease = 0.5 * (1 - Math.cos(Math.PI * progress));
-      window.scrollTo(0, start + distance * ease);
-      if (progress < 1) requestAnimationFrame(animate);
-    };
-
-    requestAnimationFrame(animate);
-  };
-
-  const handleScrollDown = () => {
-    smoothScrollBy(window.innerHeight, 700);
-  };
-
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (

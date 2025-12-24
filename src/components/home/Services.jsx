@@ -40,7 +40,7 @@ const Services = () => {
     <section className="h-auto lg:pb-10 pb-20 bg-[#DCECF0] flex lg:flex-row flex-col justify-center items-center w-full">
       <div>
         <div className="text-[#1F1F1F] md:p-10 p-5 rounded-4xl lg:w-[80%] md:w-[85%] w-[90%] bg-[#D0DFE2] mx-auto flex md:flex-row flex-col gap-10 justify-between items-start">
-          <div className="md:w-[42%] w-full md:text-[28px] leading-10 md:font-medium font-bold text-[22px] md:text-left text-center">
+          <div className="md:w-[42%] w-full md:text-[28px] leading-10 md:font-semibold font-semibold text-[22px] md:text-left text-center">
             If you want to integrate AI, you need a Team.
           </div>
           <div className="md:w-[45%] w-full">
@@ -120,7 +120,7 @@ const ServiceCard = ({ item }) => {
         alt={item.title}
         className="mx-auto mb-2"
       />
-      <div className="text-lg mb-3 md:font-semibold  font-bold">
+      <div className="text-lg mb-3 md:font-semibold  font-semibold">
         {item.title}
       </div>
       <div className="text-[15px] xl:min-h-45  lg:min-h-47.5 md:min-h-27.5  text-center leading-7 px-6">
