@@ -3,6 +3,8 @@ import { IMAGES } from "../../assets";
 import Fade from "@mui/material/Fade";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { ImGithub } from "react-icons/im";
+import linkedinIcon from "../../assets/images/linkedin.png";
 
 const items = [
   {
@@ -116,20 +118,25 @@ const TeamCard = ({ member }) => {
         {member.description}
       </div>
       <div className="flex justify-center items-center gap-x-5">
-        <LinkedInIcon
-          className={`cursor-pointer text-[60px]`}
+        {/* <LinkedInIcon
+          className={`cursor-pointer rounded-full text-[60px]`}
           sx={{
             fontSize: { lg: "40px", md: "30px", sx: "25px" },
             transition: "color 300ms ease",
-            color: "#2F80C9",
+            color: "black",
           }}
           onClick={() => handleClick(member.github)}
+        /> */}
+        <img
+          src={linkedinIcon}
+          width={35}
+          height={35}
+          alt={"linkedin"}
+          onClick={() => handleClick(member.github)}
+          className="cursor-pointer lg:h-9 lg:w-9 md:w-7.5 md:h-7.5 w-[25px] h-[25px]"
         />
-        <GitHubIcon
-          className={`cursor-pointer`}
-          sx={{
-            fontSize: { lg: "35px", md: "30px", sx: "25px" },
-          }}
+        <ImGithub
+          className={`cursor-pointer text-black lg:text-[35px] md:text-[30px] text-[25px]`}
           onClick={() => handleClick(member.linkedin)}
         />
       </div>

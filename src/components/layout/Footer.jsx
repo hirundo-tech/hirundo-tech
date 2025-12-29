@@ -10,7 +10,7 @@ const sitemap = [
     path: "/",
   },
   { label: "Outsourcing", path: "/outsourcing" },
-  { label: "Custom Development", path: "/portfolio" },
+  { label: "Custom Development", path: "custom-ai" },
   { label: "Portfolio", path: "/portfolio" },
 ];
 const contacts = [
@@ -80,13 +80,22 @@ const Footer = () => {
               </div>
               <div className="flex justify-start items-start flex-col gap-y-2">
                 {sitemap.map((item, index) => (
-                  <Link
+                  <div
                     key={index}
-                    to={item.path}
+                    onClick={() => {
+                      if (index === 0) {
+                        window.scrollTo({
+                          top: 0,
+                          behavior: "smooth",
+                        });
+                      } else {
+                        navigate(item.path);
+                      }
+                    }}
                     className={`text-[15px] transition-all duration-300 text-[#1F1F1F] hover:text-[#2f80c9]`}
                   >
                     {item.label}
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>
