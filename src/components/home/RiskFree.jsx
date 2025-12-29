@@ -26,6 +26,9 @@ const data = [
 ];
 
 const RiskFree = () => {
+  const handleClick = (link) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
   return (
     <section className="h-auto lg:py-40 py-20 bg-[#DCECF0] flex md:flex-row flex-col justify-center items-center w-full">
       <div className="lg:w-[80%] md:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col gap-10 justify-between items-start">
