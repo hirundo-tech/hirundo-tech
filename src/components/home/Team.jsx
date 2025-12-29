@@ -91,7 +91,7 @@ const TeamCard = ({ member }) => {
 
   return (
     <div
-      className="lg:w-95.75 md:w-85 md:h-140.5 h-auto p-5 w-full"
+      className="lg:w-95.75 md:w-85 md:h-146.5 h-auto p-5 w-full"
       style={{
         color: "#1F1F1F",
         background: "#D0DFE2",
