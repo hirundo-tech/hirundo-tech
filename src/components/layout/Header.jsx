@@ -139,21 +139,21 @@ export default function Header({ visible }) {
           Contact Us
         </Button>
       </Toolbar>
-      {show && (
-        <Drawer
-          anchor="left"
-          open={show}
-          onClose={() => setShow(false)}
-          sx={{
-            "& .MuiDrawer-paper": {
-              minWidth: "290px",
-              backgroundColor: "#D0DFE2",
-            },
-          }}
-        >
-          <MobileMenu show={show} setShow={setShow} />
-        </Drawer>
-      )}
+      <Drawer
+        anchor="left"
+        open={show}
+        onClose={() => setShow(false)}
+        ModalProps={{ keepMounted: true }}
+        transitionDuration={300}
+        sx={{
+          "& .MuiDrawer-paper": {
+            minWidth: "290px",
+            backgroundColor: "#D0DFE2",
+          },
+        }}
+      >
+        <MobileMenu show={show} setShow={setShow} />
+      </Drawer>
     </AppBar>
   );
 }
