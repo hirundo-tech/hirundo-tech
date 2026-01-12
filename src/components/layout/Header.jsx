@@ -10,10 +10,7 @@ import Fade from "@mui/material/Fade";
 import Drawer from "@mui/material/Drawer";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
-
-const baseClass = "font-medium text-xs transition-all duration-300";
-const activeClass = "text-[#2f80c9] font-bold";
-const inactiveClass = "text-[#1F1F1F] hover:text-[#2f80c9]";
+import { IoMdCloseCircle } from "react-icons/io";
 
 const items = [
   {
@@ -149,7 +146,7 @@ export default function Header({ visible }) {
           onClose={() => setShow(false)}
           sx={{
             "& .MuiDrawer-paper": {
-              minWidth: "180px",
+              minWidth: "290px",
               backgroundColor: "#D0DFE2",
             },
           }}
@@ -166,13 +163,21 @@ const MobileMenu = ({ show }) => {
   const [showSubItems, setShowSubItem] = useState(false);
   const [subItemIndex, setSubItemIndex] = useState(null);
 
+  const baseClass = "font-medium text-lg transition-all duration-300";
+  const activeClass = "text-[#2f80c9] font-bold";
+  const inactiveClass = "text-[#1F1F1F] hover:text-[#2f80c9]";
+
   return (
-    <div className="bg-[#d0dfe2] w-auto flex flex-col gap-y-3 py-3 px-5">
+    <div className="bg-[#d0dfe2] w-full relative flex flex-col gap-y-3 py-3 px-5">
+      <IoMdCloseCircle
+        className="text-4xl absolute top-2 text-[#2F80C9] right-2 cursor-pointer"
+        onClick={() => setShow(false)}
+      />
       <img
         src={IMAGES.logotype}
         alt="HIRUNDO Logo"
-        width={100}
-        height={30}
+        width={230}
+        height={50}
         fetchPriority="high"
         loading="lazy"
         className="lg:hidden block"
@@ -187,7 +192,7 @@ const MobileMenu = ({ show }) => {
             <Link
               key={index}
               to={item.path}
-              className={`${baseClass} ${
+              className={`${baseClass} pl-2  ${
                 isActive ? activeClass : inactiveClass
               }`}
             >
@@ -198,7 +203,7 @@ const MobileMenu = ({ show }) => {
         return (
           <Box
             key={index}
-            className={`relative cursor-pointer ${baseClass} ${
+            className={`pl-2 relative cursor-pointer ${baseClass} ${
               isActive ? activeClass : inactiveClass
             }`}
             role="button"
@@ -249,7 +254,7 @@ const MobileMenu = ({ show }) => {
                     <Link
                       key={subItem.path}
                       to={subItem.path}
-                      className={`block  py-0.5 ${
+                      className={`block text-lg  py-0.5 ${
                         subActive ? activeClass : inactiveClass
                       }`}
                       onClick={() => {
