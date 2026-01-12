@@ -151,14 +151,14 @@ export default function Header({ visible }) {
             },
           }}
         >
-          <MobileMenu show={show} />
+          <MobileMenu show={show} setShow={setShow} />
         </Drawer>
       )}
     </AppBar>
   );
 }
 
-const MobileMenu = ({ show }) => {
+const MobileMenu = ({ show, setShow }) => {
   const location = useLocation();
   const [showSubItems, setShowSubItem] = useState(false);
   const [subItemIndex, setSubItemIndex] = useState(null);
