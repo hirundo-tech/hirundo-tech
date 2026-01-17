@@ -17,10 +17,10 @@ const items = [
     label: "Services",
     subItems: [
       { label: "Outsourcing", path: "/outsourcing" },
-      { label: "Custom AI", path: "/custom-ai" },
+      { label: "AI Transition", path: "/custom-ai" },
     ],
   },
-  { label: "Portfolio", path: "/portfolio" },
+  { label: "Case Studies", path: "/portfolio" },
   { label: "About", path: "/about" },
 ];
 
