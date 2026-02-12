@@ -62,7 +62,7 @@ const Services = () => {
         </div>
 
         <div
-          className="md:mt-10 mt-5 lg:w-[80%] md:w-[85%] w-[90%] bg-[#DCECF0] mx-auto 
+          className="md:mt-4 mt-5 lg:w-[80%] md:w-[85%] w-[90%] bg-[#DCECF0] mx-auto 
   grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 justify-center items-center"
         >
           {items.map((item, index) => {
@@ -72,7 +72,7 @@ const Services = () => {
             useEffect(() => {
               const observer = new IntersectionObserver(
                 ([entry]) => setVisible(entry.isIntersecting),
-                { threshold: 0.3 }
+                { threshold: 0.3 },
               );
 
               if (cardRef.current) observer.observe(cardRef.current);

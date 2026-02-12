@@ -17,6 +17,15 @@ const items = [
       "AI engineer with 7+ years of Python experience, specialized in Data Science, ML, and GenAI. Co-founder of Sirio, raising over 800K$, where he enhanced Business Management skills, now works as AI developer & business lead at Hirundo.",
   },
   {
+    icon: IMAGES.team3,
+    name: "Marco - ",
+    role: "Security Engineer",
+    linkedin: "https://www.linkedin.com/in/marcomaraglino5/",
+    github: "https://github.com/marcomaraglino",
+    description:
+      "Computer Engineer & Cybersecurity PhD candidate, veteran of projects like Sirio Finance and Poliba Corse. Expert in Java, Node, and Next.js, he is now Security Engineer at Hirundo, ensuring systems are production-ready and bulletproof.",
+  },
+  {
     icon: IMAGES.team1,
     name: "Andrew - ",
     role: "Fullstack AI Developer",
@@ -36,7 +45,7 @@ const Team = () => {
       ([entry]) => {
         setVisible(entry.intersectionRatio >= 0.1);
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -46,7 +55,7 @@ const Team = () => {
 
   return (
     <section className="h-auto md:mt-20 mt-20 lg:mt-0 pb-10 bg-[#DCECF0] flex justify-center items-center w-full">
-      <div className="text-[#1F1F1F] lg:p-10 p-4 rounded-4xl xl:w-[58%] lg:w-[75%] md:w-[95%] w-[95%] mx-auto">
+      <div className="text-[#1F1F1F] lg:p-10 p-4 rounded-4xl xl:w-[97%] lg:w-[87%] md:w-[95%] w-[95%] mx-auto">
         <div className="text-[28px] md:font-semibold font-semibold">
           Meet Our Team.
         </div>
@@ -66,7 +75,7 @@ const Team = () => {
 
         <div
           ref={ref}
-          className="flex md:flex-row flex-col justify-between mt-10 items-center gap-10"
+          className="flex md:flex-row flex-col flex-wrap justify-start mt-10 items-center gap-10"
         >
           {items.map((item, index) => (
             <Fade
@@ -93,7 +102,7 @@ const TeamCard = ({ member }) => {
 
   return (
     <div
-      className="lg:w-95.75 md:w-85 md:h-146.5 h-auto p-5 w-full"
+      className="lg:w-95.75 md:w-80 md:h-146.5 h-auto p-5 w-full"
       style={{
         color: "#1F1F1F",
         background: "#D0DFE2",
@@ -106,7 +115,7 @@ const TeamCard = ({ member }) => {
         width={130}
         height={195}
         alt={member.name}
-        className="mx-auto"
+        className="mx-auto rounded-2xl"
       />
       <div className="text-lg mt-6 md:font-semibold font-semibold">
         {member.name}

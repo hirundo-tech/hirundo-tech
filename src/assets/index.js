@@ -7,6 +7,7 @@ import service3 from "./images/service3.svg";
 import service4 from "./images/service4.svg";
 import team1 from "./images/team1.svg";
 import team2 from "./images/team2.svg";
+import team3 from "./images/team3.jpeg";
 import linkedin from "./images/linkedin.svg";
 import github from "./images/github.svg";
 import menu from "./images/menu.svg";
@@ -24,6 +25,7 @@ export const IMAGES = {
   service4,
   team1,
   team2,
+  team3,
   linkedin,
   github,
 };

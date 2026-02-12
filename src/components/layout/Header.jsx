@@ -160,8 +160,8 @@ export default function Header({ visible }) {
 
 const MobileMenu = ({ show, setShow }) => {
   const location = useLocation();
-  const [showSubItems, setShowSubItem] = useState(false);
-  const [subItemIndex, setSubItemIndex] = useState(null);
+  const [showSubItems, setShowSubItem] = useState(true);
+  const [subItemIndex, setSubItemIndex] = useState(0);
 
   const baseClass = "font-medium text-lg transition-all duration-300";
   const activeClass = "text-[#2f80c9] font-bold";

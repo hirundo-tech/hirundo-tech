@@ -1,13 +1,30 @@
+import { useEffect, useState, useRef } from "react";
 import { IMAGES } from "../../assets";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useMediaQuery } from "@mui/material";
 
 const Hero = () => {
+  const servicesRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
   const handleClick = (link) => {
     window.open(link, "_blank", "noopener,noreferrer");
   };
 
   const isDesktop = useMediaQuery("(min-width: 1024px)");
+
+  const handleOutsideClick = (event) => {
+    if (servicesRef.current && !servicesRef.current.contains(event.target)) {
+      setVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   return (
     <section className="md:h-auto relative h-auto bg-[#DCECF0] w-full">
@@ -38,12 +55,45 @@ const Hero = () => {
               >
                 Book AI Assessment
               </button>
-              <button
-                // onClick={() => handleClick("https://calendly.com/hirundo-tech")}
-                className="border-2 bg-[#DCECF0] border-[#2F80C9] text-[#2F80C9] font-semibold text-[15px] px-2.5 flex justify-center items-center h-10.5 cursor-pointer rounded-4xl"
-              >
-                Our Services
-              </button>
+              <div className="relative" ref={servicesRef}>
+                <div
+                  onClick={() => setVisible((prev) => !prev)}
+                  className="border-2 bg-[#DCECF0] border-[#2F80C9] text-[#2F80C9] font-semibold text-[15px] px-2.5 flex w-30 justify-center items-center h-10.5 cursor-pointer rounded-4xl"
+                >
+                  {visible ? "Go Back" : "Our Services"}
+                </div>
+                <AnimatePresence>
+                  {visible && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className="absolute top-10 md:-left-3 right-0 w-auto z-10 origin-top"
+                    >
+                      <ul className="mt-3 space-y-2 flex flex-col w-auto justify-center">
+                        <button
+                          onClick={() =>
+                            handleClick("https://calendly.com/hirundo-tech")
+                          }
+                          className="bg-[#2F80C9] text-[#DCECF0] font-semibold px-2.5 text-[15px] h-10.5 cursor-pointer rounded-4xl min-w-[150px]"
+                        >
+                          AI Transition
+                        </button>
+
+                        <button
+                          onClick={() =>
+                            handleClick("https://calendly.com/hirundo-tech")
+                          }
+                          className="bg-[#2F80C9] text-[#DCECF0] font-semibold px-2.5 text-[15px] h-10.5 cursor-pointer rounded-4xl min-w-[150px]"
+                        >
+                          AI Outsourcing
+                        </button>
+                      </ul>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             </div>
           </motion.div>
 

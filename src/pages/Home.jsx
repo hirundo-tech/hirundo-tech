@@ -20,7 +20,7 @@ const Home = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="text-4xl bg-[#DCECF0] min-h-screen w-dvw">
+    <div className="text-4xl bg-[#DCECF0] min-h-screen max-w-360 mx-auto w-full">
       <Header visible={visible} />
       <Hero />
       <Services />
