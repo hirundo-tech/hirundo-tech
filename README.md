@@ -1,3 +1,1 @@
-# React + Vite
-
-Hirundo Technologies s.r.l.s. website
+# Welcome to Hirundo Technologies s.r.l.s. website
