@@ -24,9 +24,8 @@ const items = [
   { label: "About", path: "/about" },
 ];
 
-export default function Header({ visible }) {
+export default function Header({ visible, show, setShow }) {
   const navigate = useNavigate();
-  const [show, setShow] = useState(false);
 
   return (
     <AppBar
@@ -55,7 +54,7 @@ export default function Header({ visible }) {
       >
         <div
           onClick={() => setShow(true)}
-          className="lg:hidden absolute cursor-pointer top-13 bg-[#2F80C9] rounded-md p-1 w-8.5 h-8.5 right-4"
+          className="lg:hidden absolute cursor-pointer top-13 bg-[#2F80C9] rounded-full p-1 w-[45px] h-[45px] right-4"
         >
           {/* <img
             src={IMAGES.menu} // replace with your logo path
@@ -78,10 +77,10 @@ export default function Header({ visible }) {
                 cursor: "pointer",
               }}
             /> */}
-            <div className="space-y-1 h-fit mt-1.5">
-              <div className="w-6 h-0.5 rounded-full bg-white"></div>
-              <div className="w-6 h-0.5 rounded-full bg-white"></div>
-              <div className="w-6 h-0.5 rounded-full bg-white"></div>
+            <div className="space-y-1.5 h-fit mt-2.5">
+              <div className="w-6 h-0.5  bg-white"></div>
+              <div className="w-6 h-0.5  bg-white"></div>
+              <div className="w-6 h-0.5  bg-white"></div>
             </div>
           </div>
         </div>

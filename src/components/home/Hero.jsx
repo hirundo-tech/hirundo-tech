@@ -3,7 +3,7 @@ import { IMAGES } from "../../assets";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMediaQuery } from "@mui/material";
 
-const Hero = () => {
+const Hero = ({ setShow }) => {
   const servicesRef = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -25,6 +25,14 @@ const Hero = () => {
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, []);
+
+  const handleClickServices = () => {
+    if (isDesktop) {
+      setVisible((prev) => !prev);
+    } else {
+      setShow((prev) => !prev);
+    }
+  };
 
   return (
     <section className="md:h-auto relative h-auto bg-[#DCECF0] w-full">
@@ -57,7 +65,7 @@ const Hero = () => {
               </button>
               <div className="relative" ref={servicesRef}>
                 <div
-                  onClick={() => setVisible((prev) => !prev)}
+                  onClick={() => handleClickServices()}
                   className="border-2 bg-[#DCECF0] border-[#2F80C9] text-[#2F80C9] font-semibold text-[15px] px-2.5 flex w-30 justify-center items-center h-10.5 cursor-pointer rounded-4xl"
                 >
                   {visible ? "Go Back" : "Our Services"}

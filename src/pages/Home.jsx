@@ -8,6 +8,7 @@ import Header from "../components/layout/Header";
 
 const Home = () => {
   const [visible, setVisible] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,8 +22,12 @@ const Home = () => {
   }, []);
   return (
     <div className="text-4xl bg-[#DCECF0] min-h-screen max-w-360 mx-auto w-full">
-      <Header visible={visible} />
-      <Hero />
+      <Header
+        visible={visible}
+        show={showMobileMenu}
+        setShow={setShowMobileMenu}
+      />
+      <Hero setShow={setShowMobileMenu} />
       <Services />
       <RiskFree />
       <Team />
